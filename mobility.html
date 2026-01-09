@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="mobility.css" />
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+
+
+
+
+<div id="linear-gradient-div"></div>
+<div id="preloader"></div>
+
+
+
+
+<!-- HEADER -->
+<header id="header">
+  <button id="menu-btn" class="menu-btn">☰</button> 
+  <nav class="nav" id="nav-bar">
+    <ul>
+      <li class="nav-li"><a href="index.html" style="color: black; text-decoration:none;">Home</a></li>
+      <li class="nav-li"><a href="mobility.html" style="color: black; text-decoration:none;">Mobility</a></li>
+      <li class="nav-li"><a href="care.html" style="color: black; text-decoration:none;">Care</a></li>
+      <li class="nav-li"><a href="respiratory.html" style="color: black; text-decoration:none;">Respiratory</a></li>
+      <li class="nav-li"><a href="disposables.html" style="color: black; text-decoration:none;">Disposables</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="7vh" height="7vh" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16" display="inline" >  
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/> 
+    </svg>
+    <i class="bi bi-activity"></i>
+    <h1><span class="red">T</span>-<span class="blue">Care</span></h1>
+  </div>
+
+  <div class="cart" id="cart1">🛒</div>
+</header>
+
+
+
+
+
+
+<main class="main">
+  <div id="products-number">6 products</div> 
+  <hr>
+
+
+  <!--carts section-->
+  <div class="shopping-menu" id="shopping-menu1">
+    <h1 class="cart-title"> Your Cart</h1>
+    <hr>
+    <div class="item-in-cart" id="item-in-cart-bloodpressuremachine">
+     <img class='items-photo' src="https://i.ebayimg.com/images/g/SOEAAOSwcp5i8eMH/s-l400.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Blood pressure machine</p>
+      <p>$30.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-surgicalmask">
+     <img class='items-photo' src="https://www.dispotech.com/media/5nknwqgp/surgical_mask_triis_box.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Surgical masks</p>
+      <p>$8.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-comodewheelchair">
+     <img class='items-photo' src="https://khatushyamequipments.com/wp-content/uploads/2023/08/Commode-Wheelchair.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Comode Wheelchair</p>
+      <p>$50.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-oxygenmachine">
+     <img class='items-photo' src="https://nsnlebanon.com/wp-content/uploads/2018/03/1.-Oxygen-Concentrator.png">
+     <div class="item-information">
+      <p style="font-size:20px;">Oxygen machine</p>
+      <p>$300.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr> 
+    </div>
+       
+    <button class="shopping-menu-btn" id="shopping-menu-btn1">Buy items</button>
+    <br>
+  </div> 
+  <br>
+  <div id="items-container">
+    <div class="cards">
+      <img class="img1" src="https://myaccuratemed.com/wp-content/uploads/2018/02/Wheelchair-910x1024.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Manual Wheelchair (Standard Mobility Wheelchair)</p>
+        <p class="item-price">$140.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://comfortmedicalstore.com/wp-content/uploads/2023/11/298613-300x300.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Deluxe, Trigger Release Walker With 5″ Wheels</p>
+        <p class="item-price">$70.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://5.imimg.com/data5/SELLER/Default/2025/7/527496923/JG/LX/RM/58138886/ev-103-electric-wheelchair-hybrid-with-reclining-feature-500x500.png">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Evox WC 103 Electric Bed</p>
+        <p class="item-price">$700.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://image.made-in-china.com/201f0j00eSglZIBMfvYP/Medical-Equipment-Mobility-Scooter-Carbon-Steel-Wheelchair.webp">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Carbon Steel Frame Electric Wheelchair</p>
+        <p class="item-price">$100.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://khatushyamequipments.com/wp-content/uploads/2023/08/Commode-Wheelchair.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Comode Wheelchair</p>
+        <p class="item-price">$50.00</p>
+      </div> 
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://www.mobility2you.com/cdn/shop/products/R8RD-59-R8-Rollator-Red-2_512x486.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Hande brake Walker</p>
+        <p class="item-price">$20.00</p>
+      </div> 
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="footer">
+    <div class="footer-content">
+
+    <!-- About -->
+     <div class="footer-section" id="footer-section1">
+      <h3>About Us</h3>
+      <p>
+        We provide high-quality medical equipment designed to improve patient
+        comfort and support healthcare professionals. Our products are reliable,
+        safe, and trusted for home and clinical use.
+      </p>
+     </div>
+
+    <!-- Contact -->
+     <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>📍 Beirut, Lebanon</p>
+      <p>📞 +961 00 000 000</p>
+      <p>📧 info@medicalstore.com</p>
+      <p>🕒 Mon – Sat: 9:00 AM – 6:00 PM</p>
+     </div>
+
+
+    <!-- Links -->
+     <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a  href="index.html#hero-id">Home</a></li>
+        <li><a  href="index.html#equipment-id">Products</a></li>
+        <li><a  href="index.html#faq-container">FAQ</a></li>
+        <li><a  href="index.html#footer">Contact</a></li>
+      </ul>
+     </div>
+     
+
+    </div>
+    <br>
+    <br>
+    <div class="footer-bottom" id="footer-bottom1">
+       <p>© 2025 Medical Equipment Store. All rights reserved.</p>
+    </div>
+  </div>
+ <script src="mobility.js"></script>
+</main>

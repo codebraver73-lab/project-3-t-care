@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="care.css" />
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+
+
+
+
+<div id="linear-gradient-div"></div>
+<div id="preloader"></div>
+<!-- HEADER -->
+<header id="header">
+  
+  <button id="menu-btn" class="menu-btn">☰</button>  
+  <nav class="nav" id="nav-bar">
+    <ul>
+      <li class="nav-li"><a href="index.html" style="color: black; text-decoration:none;">Home</a></li>
+      <li class="nav-li"><a href="mobility.html" style="color: black; text-decoration:none;">Mobility</a></li>
+      <li class="nav-li"><a href="care.html" style="color: black; text-decoration:none;">Care</a></li>
+      <li class="nav-li"><a href="respiratory.html" style="color: black; text-decoration:none;">Respiratory</a></li>
+      <li class="nav-li"><a href="disposables.html" style="color: black; text-decoration:none;">Disposables</a></li>
+    
+    </ul>
+  </nav>
+
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="7vh" height="7vh" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16" display="inline" >  
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/> 
+    </svg>
+    <i class="bi bi-activity"></i>
+    <h1><span class="red">T</span>-<span class="blue">Care</span></h1>
+  </div>
+
+  <button id="cart1" class="cart">🛒</button>
+  
+</header>
+
+<main class="main">
+  <div id="products-number">9 products</div> 
+  <hr>
+
+
+
+<!-- shoping cart section-->
+  <div class="shopping-menu" id="shopping-menu1">
+    <h1 class="cart-title"> Your Cart</h1>
+    <hr>
+    <div class="item-in-cart" id="item-in-cart-bloodpressuremachine">
+     <img class='items-photo' src="https://i.ebayimg.com/images/g/SOEAAOSwcp5i8eMH/s-l400.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Blood pressure machine</p>
+      <p>$30.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-surgicalmask">
+     <img class='items-photo' src="https://www.dispotech.com/media/5nknwqgp/surgical_mask_triis_box.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Surgical masks</p>
+      <p>$8.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-comodewheelchair">
+     <img class='items-photo' src="https://khatushyamequipments.com/wp-content/uploads/2023/08/Commode-Wheelchair.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Comode Wheelchair</p>
+      <p>$50.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-oxygenmachine">
+     <img class='items-photo' src="https://www.curelinehealthcare.com/cdn/shop/files/Oxygen_machine_2.png?v=1760026319&width=1080">
+     <div class="item-information">
+      <p style="font-size:20px;">Oxygen machine</p>
+      <p>$300.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+        
+    <button class="shopping-menu-btn" id="shopping-menu-btn1">Buy items</button>
+    <br>
+  </div>
+  <br>
+
+
+
+  <!--displaying items on the page-->
+  <div id="items-container">
+    <div class="cards">
+      <img class="img1" src="https://i.ebayimg.com/images/g/SOEAAOSwcp5i8eMH/s-l400.jpg">
+      <p class="plus-button" >+</p>
+      <div class="items-description">
+        <p class="item-name">Blood pressure machine</p>
+        <p class="item-price">$30.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://www.asthashop.org/wp-content/uploads/2023/01/Blood-Pressure-Machine-1.webp">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Electrical blood pressure machine</p>
+        <p class="item-price">$20.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://www.paramedicshop.co.za/cdn/shop/products/bpm1.jpeg?v=1465286834">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Manual blood pressure machine</p>
+        <p class="item-price">$10.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://drtrust.in/cdn/shop/files/dr-trust-usa-vital-pulse-oximeter-spo2-meter-fingertip-blood-oxygen-saturation-monitor-blood-oxygen-meter-finger-oximeter-finger-with-pulse-219-1178181529.jpg?v=1752588047&width=2000">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Vital pulse oximeter</p>
+        <p class="item-price">$10.00</p>
+      </div>
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://www.britishjournalofcommunitynursing.com/media/y12mic2j/bjcn-2020-25-8-408_f01.jpg?width=1002&height=564&v=1d7216278019440">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Pulse oximeter</p>
+        <p class="item-price">$8.00</p>
+      </div> 
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://www.cnwtc.com/uploads/202132262/body-forehead-handheld-thermometer-medical38582866167.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Digital Infrared Forehead Thermometer</p>
+        <p class="item-price">$20.00</p>
+      </div> 
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://www.teammed.com.au/shop/product-images/cache/cc2a340732ce5d347ae7ff715e2532df.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Oral Thermometer</p>
+        <p class="item-price">$15.00</p>
+      </div> 
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://www.sejoy.com/uploads/Blood-Glucose-Monitoring-System-208.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name"> Blood glucose meter</p>
+        <p class="item-price">$5.00</p>
+      </div> 
+    </div>
+    <div class="cards">
+      <img class="img1" src="https://medicalequipmentnig.com/wp-content/uploads/2022/04/blood-glucose-meter-medicalequipmentnig.jpg">
+      <p class="plus-button">+</p>
+      <div class="items-description">
+        <p class="item-name">Medical glucometer machine</p>
+        <p class="item-price">$7.00</p>
+      </div> 
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="footer">
+    <div class="footer-content">
+
+    <!-- About -->
+     <div class="footer-section" id="footer-section1">
+      <h3>About Us</h3>
+      <p>
+        We provide high-quality medical equipment designed to improve patient
+        comfort and support healthcare professionals. Our products are reliable,
+        safe, and trusted for home and clinical use.
+      </p>
+     </div>
+
+    <!-- Contact -->
+     <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>📍 Beirut, Lebanon</p>
+      <p>📞 +961 00 000 000</p>
+      <p>📧 info@medicalstore.com</p>
+      <p>🕒 Mon – Sat: 9:00 AM – 6:00 PM</p>
+     </div>
+
+
+    <!-- Links -->
+     <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a  href="index.html#hero-id">Home</a></li>
+        <li><a  href="index.html#equipment-id">Products</a></li>
+        <li><a  href="index.html#faq-container">FAQ</a></li>
+        <li><a  href="index.html#footer">Contact</a></li>
+      </ul>
+     </div>
+     
+
+    </div>
+    <br>
+    <br>
+    <div class="footer-bottom" id="footer-bottom1">
+       <p>© 2025 Medical Equipment Store. All rights reserved.</p>
+    </div>
+  </div>
+ <script src="care.js"></script>
+</main>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Care</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+
+<div id="linear-gradient-div"></div>
+<div id="preloader"></div>
+<!-- HEADER -->
+<header id="header">
+  <button id="menu-btn" class="menu-btn">☰</button> 
+  <nav class="nav" id="nav-bar">
+    
+    <ul>
+      <li class="nav-li"><a href="index.html" style="color: black; text-decoration:none;">Home</a></li>
+      <li class="nav-li"><a href="mobility.html" style="color: black; text-decoration:none;">Mobility</a></li>
+      <li class="nav-li"><a href="care.html" style="color: black; text-decoration:none;">Care</a></li>
+      <li class="nav-li"><a href="respiratory.html" style="color: black; text-decoration:none;">Respiratory</a></li>
+      <li class="nav-li"><a href="disposables.html" style="color: black; text-decoration:none;">Disposables</a></li>
+    
+    </ul>
+  </nav>
+
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="7vh" height="7vh" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16" display="inline"> 
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/> 
+    </svg>
+    <i class="bi bi-activity"></i>
+    <h1><span class="red">T</span>-<span class="blue">Care</span></h1>
+  </div>
+
+  <div class="cart" id="cart1">🛒</div>
+</header>
+
+
+<!-- Main section-->
+<main class="main">
+  <div class="shopping-menu" id="shopping-menu1">
+    <h1 class="cart-title">Your Cart</h1>
+    <hr>
+    <div class="item-in-cart" id="item-in-cart-bloodpressuremachine">
+     <img class='items-photo' src="https://i.ebayimg.com/images/g/SOEAAOSwcp5i8eMH/s-l400.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Blood pressure machine</p>
+      <p>$30.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-surgicalmask">
+     <img class='items-photo' src="https://www.dispotech.com/media/5nknwqgp/surgical_mask_triis_box.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Surgical masks</p>
+      <p>$8.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-comodewheelchair">
+     <img class='items-photo' src="https://khatushyamequipments.com/wp-content/uploads/2023/08/Commode-Wheelchair.jpg">
+     <div class="item-information">
+      <p style="font-size:20px;">Comode Wheelchair</p>
+      <p>$50.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+    
+    <div class="item-in-cart" id="item-in-cart-oxygenmachine">
+     <img class='items-photo' src="https://nsnlebanon.com/wp-content/uploads/2018/03/1.-Oxygen-Concentrator.png">
+     <div class="item-information">
+      <p style="font-size:20px;">Oxygen machine</p>
+      <p>$300.00</p>
+      <div class="item-quantity">
+          <div class="quantity-manipulators">
+            <span>-</span>
+          </div>
+          <div class="number">
+          </div>
+          <div class="quantity-manipulators">
+            <span>+</span>
+          </div>
+      </div>
+      <div class="trash-icon" id="trash-icon1"><button>Remove</button></div>
+     </div>
+     <hr>
+    </div>
+       
+    <button class="shopping-menu-btn" id="shopping-menu-btn1">Buy items</button>
+  </div>  
+
+  <section class="hero" id="hero-id">
+
+    <h1>T-Care</h1>
+    <br>
+    <br>
+    <p>Take care because your well-being is our primary goal</p>
+  </section>
+  <hr>
+  <section class="equipment" id="equipment-id">
+    <h2>Our Equipment</h2>
+    <div class="cards">
+      <div class="card card1"><p>Mobility</p><button class="equipement-buttons" id="equipement-button1">View items</button></div>
+      <div class="card card2"><p>Respiratory</p><button class="equipement-buttons" id="equipement-button2">View items</button></div>
+      <div class="card card3"><p>Care</p><button class="equipement-buttons" id="equipement-button3">View items</button></div>
+      <div class="card card4"><p>Disposables</p><button class="equipement-buttons" id="equipement-button4">View items</button></div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <br>
+  <section>
+    <h1 id="why-to-choose-us-h1">Why to choose us</h1>
+    <br>
+
+     
+
+    <div id="why-choose-us-div">
+     <div>
+        <h3>Quality and Safety Assurance</h3>
+        <p>A trusted medical store sells certified, high-quality equipment that meets health and safety standards. This gives customers confidence that the products are reliable, durable, and safe to use.</p>
+     </div>         
+     <div>
+        <h3>Expert Guidance and Support</h3>
+        <p>A specialized medical store offers professional advice to help customers choose the right equipment for their needs. This is especially important for medical products that require correct usage or sizing.</p>
+     </div>
+     <div>
+       <h3 style="margin-right:5vw;">After-Sales Service and Warranty</h3>       
+       <p>Good medical stores provide warranties, maintenance, and customer support, ensuring peace of mind. If something goes wrong, customers know they can get help quickly.</p>
+     </div>  
+        
+    <div> 
+  </section>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <br>
+ 
+
+
+
+ <section class="equipment-section">
+
+  <h2 class="equipment-title">Some equipment</h2>
+
+  <div id="equipmentCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#equipmentCarousel" data-bs-slide-to="7"></button>
+    </div>
+
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="https://myaccuratemed.com/wp-content/uploads/2018/02/Wheelchair-910x1024.jpg"
+             class="d-block w-100 carousel-img"
+             alt="Wheelchair">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://comfortmedicalstore.com/wp-content/uploads/2023/11/298613-300x300.jpg"
+             class="d-block w-100 carousel-img"
+             alt="Walker">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2025/7/527496923/JG/LX/RM/58138886/ev-103-electric-wheelchair-hybrid-with-reclining-feature-500x500.png"
+             class="d-block w-100 carousel-img"
+             alt="Electric Wheelchair">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://www.curelinehealthcare.com/cdn/shop/files/Oxygen_machine_2.png?v=1760026319&width=1080"
+             class="d-block w-100 carousel-img"
+             alt="Oxygen Machine">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://cdn.shopify.com/s/files/1/0404/4315/0497/t/3/assets/pf-2ffd64b6--Oxygenconcentrator.jpg?v=1599674349"
+             class="d-block w-100 carousel-img"
+             alt="Oxygen Concentrator">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://www.dispotech.com/media/5nknwqgp/surgical_mask_triis_box.jpg"
+             class="d-block w-100 carousel-img"
+             alt="Surgical Masks">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://www.brackmed.com.ly/assets/imgs/products/lp-italiana/tubes.png"
+             class="d-block w-100 carousel-img"
+             alt="Medical Tubes">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://www.kmedhealth.com/wp-content/uploads/2020/09/luer-lock-syringe.png"
+             class="d-block w-100 carousel-img"
+             alt="Syringe">
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button"
+            data-bs-target="#equipmentCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button"
+            data-bs-target="#equipmentCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+ </section>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+ <section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <br>
+  <br>
+  <div id="faq-container">
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          Do I need a prescription to buy medical equipment?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Some medical equipment requires a prescription, while others can be purchased freely. Our team will guide you if a prescription is needed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you offer delivery services?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we offer fast and reliable delivery across the country with careful handling of all equipment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Is there a warranty on your products?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>All our medical equipment comes with a manufacturer warranty and optional extended support.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can I return or exchange a product?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, returns and exchanges are accepted under specific conditions. Please contact customer support for details.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you provide installation or training?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>For selected equipment, we offer installation and user training to ensure safe and correct usage.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="img1">
+      <img src="https://media.gettyimages.com/id/1646321732/video/factory-day.jpg?s=640x640&k=20&c=GwMv6rPKMQ3uE9oeDe37vi-JevmNmm3CnuCYBtQkrAg=">
+    </div>
+
+  </div>
+ </section>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="footer">
+    <div class="footer-content">
+
+    <!-- About -->
+     <div class="footer-section" id="footer-section1">
+      <h3>About Us</h3>
+      <p>
+        We provide high-quality medical equipment designed to improve patient
+        comfort and support healthcare professionals. Our products are reliable,
+        safe, and trusted for home and clinical use.
+      </p>
+     </div>
+
+    <!-- Contact -->
+     <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>📍 Beirut, Lebanon</p>
+      <p>📞 +961 00 000 000</p>
+      <p>📧 info@medicalstore.com</p>
+      <p>🕒 Mon – Sat: 9:00 AM – 6:00 PM</p>
+     </div>
+
+
+    <!-- Links -->
+     <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a  href="index.html#hero-id">Home</a></li>
+        <li><a  href="index.html#equipment-id">Products</a></li>
+        <li><a  href="index.html#faq-container">FAQ</a></li>
+        <li><a  href="index.html#footer">Contact</a></li>
+      </ul>
+     </div>
+    </div>
+    <br>
+    <br>
+    <div class="footer-bottom" id="footer-bottom1">
+       <p>© 2025 Medical Equipment Store. All rights reserved.</p>
+    </div>
+  </div>
+
+
+    
+  
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>

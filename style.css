@@ -1,0 +1,637 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* HEADER */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 9996;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.logo h1 {
+  font-size: 28px;
+}
+
+.logo{
+  width: auto;
+  display:flex;
+  justify-content: center;
+
+}
+
+.red { color: red; }
+.blue { color: blue; }
+
+.cart {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-li{
+    position:relative;
+    cursor:pointer;
+    color:black;
+
+}
+
+.nav-li::after{
+    content:"";
+    position:absolute;
+    bottom: -36px;
+    left:0vh;
+    transition: width 0.3s ease;
+    width:0;
+    height: 3px;
+    background-color:black;
+}
+
+.nav-li:hover::after{
+    width:100%;
+}
+
+/* nav bar for tight screens*/
+
+.menu-btn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 1100;
+}
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 80px; 
+    left: 0px;
+    width: 50%;
+    height:100%;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+    padding: 20px 0;
+    z-index: 1300;
+  }
+
+  .nav.active {
+    transform: translateX(0);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .nav-li::after {
+    bottom: -8px;
+  }
+}
+
+
+#preloader {
+  background:rgb(245, 245, 245) url("The-Best-50-Website-Preloaders-Around-the-Web-Example-26.gif")
+              no-repeat center center;
+  background-size: 50%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;}
+
+
+
+
+
+
+
+/*cart section*/
+.shopping-menu{
+  position:fixed;
+  height:89%;
+  width:400px;
+  background-color: #e0e0e0;
+  z-index:9998;
+  display: block;
+  right:0px; 
+  top:80px;
+  transform:translate(100%);  
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: transform 1s ease;
+  }
+.shopping-menu-btn{
+    border-radius: 5px;
+    height:40px;
+    width:120px;
+    border:none;
+    color:white;
+    background-color: black;
+    position:relative;
+    left:140px;
+    display: none;
+  }
+.items-photo{
+    height:130px;
+    width:120px;
+    margin:20px;
+  }
+.item-quantity{
+    display:inline-flex;
+    justify-content: space-around;
+    gap:0;
+    width:auto;
+    height:auto;
+    border:solid 1px black;
+    padding: 3px;
+    
+  }
+.quantity-manipulators{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:30px;
+    height:25px;
+    font-size: 25px;
+
+    
+  }
+
+.number{
+    width:20px
+  }
+
+.item-in-cart{
+    display:flex;
+    position:relative
+    
+
+  }
+.cart-title{
+    margin-top: 5.9px;
+    margin-left: 100px;
+  }
+
+.item-information{
+    margin-top:20px;
+  }
+.trash-icon{
+    color:black;
+    cursor:pointer;
+    position:absolute;
+    right:80px;
+    font-size:12px;
+    bottom:35px;
+    background-color: transparent;
+  }
+  
+.trash-icon::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:1px;
+    background-color:black;
+    transition:width 0.3s ease;
+    left:0px;
+    bottom:3px;
+  } 
+
+.trash-icon:hover::after{
+    width:100%;
+  }
+
+.shopping-menu.cart-active{
+  transform: translateX(0%);
+}
+.trash-icon button{
+  border:none;
+  background-color: transparent;
+}
+
+
+#item-in-cart-bloodpressuremachine{
+  display:none;
+}
+
+#item-in-cart-surgicalmask{
+  display:none;
+}
+
+#item-in-cart-comodewheelchair{
+  display:none;
+}
+
+#item-in-cart-oxygenmachine{
+  display: none;
+}
+
+#linear-gradient-div{
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:0;
+  background:linear-gradient(
+       rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+  );
+  z-index:9996;
+  display:none;
+}
+
+#linear-gradient-div.cart-active1{
+   display:block;
+}
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+.main {
+  padding-top: 100px; 
+  background: #e0e0e0;
+  height:auto;
+}
+
+
+.hero {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+/* EQUIPMENT */
+.equipment {
+  padding: 40px;
+}
+
+.equipment h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  width: 140px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.equipement-buttons{
+    position:relative;
+    color:black;
+}
+
+.equipement-buttons::after{
+    content:"";
+    position:absolute;
+    left:0;
+    width:0%;
+    bottom: 0px;
+    height:100%;
+    transition: width 0.3s ease;
+    background-color:white;
+    z-index:-1;
+    color:black;
+   
+
+}
+.equipement-buttons:hover{
+    color:black;
+}
+.equipement-buttons:hover::after{
+  width:100%;
+
+  
+}
+
+.card1 {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://thumbs.dreamstime.com/b/medical-mobility-aids-including-walker-crutches-wheelchair-collection-displayed-white-background-396732059.jpg");
+}
+
+.card2 {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://www.curelinehealthcare.com/cdn/shop/collections/oxygen_machine_bc53dd88-de62-4b0e-ac99-afa96b848d1c.png");
+}
+
+.card3 {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://levas.me/8681-large_default/finger-oximeter-pulse-and-oxygen-saturation-meter.jpg");
+}
+
+.card4 {
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://planetpharma.co.zw/wp-content/uploads/2022/03/e6.jpg");
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  
+    #why-choose-us-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top:20px;
+  }
+  #why-choose-us-div h3{
+    text-align:center;
+    font-size:3vw;
+    margin-top:5vh;
+
+  }
+
+  #why-choose-us-div p{
+    width:auto;
+    font-size:3vw;
+    text-align:center;
+
+  }
+  #why-to-choose-us-h1{
+    font-size:35px;
+  }
+
+}
+
+#why-choose-us-div{
+    display:flex;
+    justify-content: space-between;
+    gap:5%;}
+
+#why-to-choose-us-h1{
+  text-align: center;
+  
+}
+
+
+.logo{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+/*FAQ section*/
+
+.faq {
+  padding: 40px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* MAIN LAYOUT */
+#faq-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* FAQ LEFT */
+.faq-list {
+  width: 60%;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+/* IMAGE RIGHT */
+#img1 {
+  width: 40%;
+  height: 50vh;
+}
+
+#img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* FAQ BUTTON */
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  background-color: #f5f5f5;
+}
+
+.icon {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+/* ANSWER */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.faq-answer p {
+  padding: 15px 0;
+  color: #555;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-item.active .icon {
+  transform: rotate(45deg);
+}
+
+
+@media (max-width: 768px) {
+  #faq-container {
+    flex-direction: column;
+  }
+
+  .faq-list,
+  #img1 {
+    width: 100%;
+  }
+
+  #img1 {
+    height: 40vh;
+  }
+}
+
+/*Carousel*/
+.equipment-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f8f9fa; /* soft medical background */
+}
+
+/* Title */
+.equipment-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Carousel size */
+#equipmentCarousel {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Images */
+.carousel-img {
+  height: 400px;
+  object-fit: contain; /* keeps image clean */
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0d6efd; /* medical blue */
+  border-radius: 50%;
+  padding: 20px;
+}
+
+
+
+/*Footer*/
+
+#footer{
+    background-color: white;
+    width:100vw;
+    height: 50vh;
+}
+
+.footer-content{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10vh;
+
+
+}
+
+#footer-bottom1{
+    text-align: center;
+
+}
+
+.footer-section{
+    width:20vw;
+}
+
+@media (max-width:800px){
+   .footer-content{
+    display: flex;
+    justify-content:space-around;
+    gap:50px;
+    flex-wrap:wrap;
+    margin-left: 10px;
+   }
+   .footer-section{
+    width:300px;
+    }
+}
